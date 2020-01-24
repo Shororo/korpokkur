@@ -16,17 +16,22 @@
   </head>
   <body>
 	<header>
-		<a href="index.html#main" class="logo"><img src="images/logo02_white.png" alt="コロポックル ロゴ"></a>
+		<a href="#" class="logo"><img src="images/logo02_white.png" alt="コロポックル ロゴ"></a>
 		<p class="navigation"><img src="images/navigation_white.png" alt="ナビゲーションバー"></p>
-
-	<nav>
-		<div class="list-group">
-		  <button type="button" class="list-group-item list-group-item-action">期間限定</button>
-		  <button type="button" class="list-group-item list-group-item-action">人気商品</button>
-		  <button type="button" class="list-group-item list-group-item-action">商品一覧</button>
-		  <button type="button" class="list-group-item list-group-item-action" >新着情報</button>
-		</div>
-	</nav>
+		
+		<div class="nav-cover"></div>
+		
+		<nav>
+			<ul>
+				<li><a href="#">トップ</a></li>
+				<li><a href="#kikan">期間限定</a></li>
+				<li><a href="#ninki">人気商品</a></li>
+				<li><a href="#menu">商品一覧</a></li>
+				<li><a href="#news">新着情報</a></li>
+				<li><a href="#otoiawase">アクセス・お問い合わせ</a></li>
+			</ul>
+		</nav>
+		
 </header>
 
 <div class="main">
@@ -56,7 +61,19 @@
 	<div class="empty"></div>
 	
 	<div class="bg-black_color-white">
-		<div class="kikan contents">
+		<div class="prologue contents">	
+				<img class="haikei" src="images/baking-3010450.jpg" alt="コロポックルについて">
+				<img class="logo" src="images/logo01_white.png" alt="コロポックル ロゴ">
+				<h1>コロポックルのケーキ</h1>
+			<div class="text">
+				<p>一つ一つに大切な意味の込められたケーキ。</p>
+				<p>今のあなたに、大切なあの人に、マッチするケーキを
+				探してみてください。</p>
+			</div>
+		</div>
+		
+		<div id="kikan" class="kikan contents">
+			<h1>期間限定：</h1>
 			<h1>VALENTINE CAKE</h1>
 			<h2>大好きを形に</h2>
 			<p class="period">period:01.18-02.20</p>
@@ -68,19 +85,19 @@
 			</div>
 			
 			<div class="shohin">
-			<img src="images/cake40_2.png" alt="コロポックル 期間限定 ケーキ">
-			<p>ショスタコーヴィチ</p>
-			<p>5800円</p>
+			<img src="images/cake28_2.png" alt="コロポックル 期間限定 ケーキ">
+			<p>ジュゼッペ</p>
+			<p>820円</p>
 			</div>
 			
 			<div class="shohin">
-			<img src="images/cake40_2.png" alt="コロポックル 期間限定 ケーキ">
-			<p>ショスタコーヴィチ</p>
-			<p>5800円</p>
+			<img src="images/cake24.jpg" alt="コロポックル 期間限定 ケーキ">
+			<p>ヴィエルヌ </p>
+			<p>1540円</p>
 			</div>
 		</div>
 
-		<div class="ninki contents">
+		<div id="ninki" class="ninki contents">
 			<h1>人気商品</h1>
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -90,24 +107,24 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+      <img class="d-block w-100" src="images/cake27.jpg" alt="コロポックル 人気ケーキ">
         <div class="carousel-caption d-md-block">
-			    <h5>ショスタコーヴィチ</h5>
-			    <p>5800円</p>
+			    <h5>ワシーリー・カラファーティ</h5>
+			    <p>5890円</p>
 			  </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+      <img class="d-block w-100" src="images/cake16.jpg" alt="コロポックル 人気ケーキ">
         <div class="carousel-caption d-md-block">
-			    <h5>ショスタコーヴィチ</h5>
-			    <p>5800円</p>
+			    <h5>アンリ・ヴュータン</h5>
+			    <p>790円</p>
 			  </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+      <img class="d-block w-100" src="images/cake07_2.jpg" alt="コロポックル 人気ケーキ">
         <div class="carousel-caption d-md-block">
-			    <h5>ショスタコーヴィチ</h5>
-			    <p>5800円</p>
+			    <h5>ヘイノ・カスキ</h5>
+			    <p>4800円</p>
 			  </div>
     </div>
   </div>
@@ -122,72 +139,119 @@
 </div>
 		</div>
 
-		<div class="menu contents">
+		<div id="menu" class="menu contents">
 			<h1>商品一覧</h1>
 			<div class="flex width-90 p-top2">
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake03_2.png" alt="コロポックル ケーキ">
+						<p>リュシアン・カペー</p>
+						<p>3800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake05_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake08.jpg" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake12.jpg" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake15_2.jpg" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+								<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake24.jpg" alt="コロポックル ケーキ">
 						<p>ショスタコーヴィチ</p>
 						<p>5800円</p>
 				</div>
-				<div class="shohin col-6">
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake27.jpg" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake28_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6 col-md-4 col-lg-3">
 					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
 					<p>ショスタコーヴィチ</p>
 					<p>5800円</p>
 				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake34.jpg" alt="コロポックル ケーキ">
 					<p>ショスタコーヴィチ</p>
 					<p>5800円</p>
 				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake25.jpg" alt="コロポックル ケーキ">
 					<p>ショスタコーヴィチ</p>
 					<p>5800円</p>
 				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
-					<p>ショスタコーヴィチ</p>
-					<p>5800円</p>
-				</div>
-								<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
-						<p>ショスタコーヴィチ</p>
-						<p>5800円</p>
-				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
-					<p>ショスタコーヴィチ</p>
-					<p>5800円</p>
-				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
-					<p>ショスタコーヴィチ</p>
-					<p>5800円</p>
-				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
-					<p>ショスタコーヴィチ</p>
-					<p>5800円</p>
-				</div>
-				<div class="shohin col-6">
-					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+				<div class="shohin col-6 col-md-4 col-lg-3">
+					<img src="images/cake42.jpg" alt="コロポックル ケーキ">
 					<p>ショスタコーヴィチ</p>
 					<p>5800円</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="news contents">
+		<div id="news" class="news contents">
 			<h1>新着情報</h1>
 				<div class="insta-card flex p-top2">
 				</div>
 		</div>
+		
+		<div id="otoiawase" class="otoiawase contents">
+				<h1>アクセス・お問い合わせ</h1>
+						<!-- グーグルマップ -->
+						<div class="gmap m-top2">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.348385590416!2d130.82617411549865!3d32.86250058692829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540e57241f4da5b%3A0xb4472c7d8e07a72d!2z6I-K6Zm955S65b255aC0!5e0!3m2!1sja!2sjp!4v1578992607440!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" id="aaa"></iframe>
+					</div>
+					<div class="renraku m-top2">
+						<p>TEL：<a href="tel:000-1234-5678">000-1234-5678</a></p>
+						<p id="mailform">MAIL +</p>
+						
+						
+						<form method="POST"
+      action="#">
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1">メールアドレス</label>
+						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						  </div>
+						  <div  class="form-group">
+						  	<label for="exampleFormControlTitle1">タイトル</label>
+						  	<input type="text" NAME="_subject" class="form-control" id="exampleFormControlTitle1">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlTextarea1">お問い合わせ内容</label>
+						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+						  <input type="hidden" NAME="_to" VALUE="pannorakuen@gmail.com">
+						  <input type="submit" value="送信">
+						</form>
+						
+						
+					</div>
+		</div>
 	</div>
 </div>
 
-<footer>
-
+<footer class="bg-black_color-white">
+		<img class="footer-logo" src="images/logo02_white.png" alt="コロポックル ロゴ">
+		<div class="site-info">
+		<i class="far fa-copyright mr-2" aria-hidden="true"></i>
+		<small>2020 Korpokkur</small>
+	</div>
 </footer>
 
 

@@ -23,4 +23,20 @@ $(function () {
     } catch (error) {
         alert(error);
     }
-})
+    
+    $(document).on('click',function(e) {
+   if(!$(e.target).closest('.navigation').length) {
+     // ターゲット要素の外側をクリックした時の操作
+     			$("nav").slideUp();
+			$(".nav-cover").slideUp();
+   } else {
+     // ターゲット要素をクリックした時の操作
+     			$("nav").slideToggle();
+			$(".nav-cover").slideToggle();
+   }
+	});
+	
+    $("#mailform").on("click",function() {
+    		$("form").slideToggle();
+	});
+});

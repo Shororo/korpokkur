@@ -13,7 +13,7 @@ $(function () {
             for (i in datas) {
                 url = datas[i].node.display_url;
                 this.html = `
-                <div class="col-6 col-lg-3 p-2 cardImgWrp">
+                <div class="col-6 col-md-4 vh-35 p-2 cardImgWrp">
                 <img src="${url}" class="cardImg" style="box-shadow: 5px 5px 20px #00000052;">
                 </div>
                 `;

@@ -1,5 +1,5 @@
     /* instagram */
-$(function () {
+$(function () {	
     try {
         this.name = "achon0807";
         $.ajax('https://www.instagram.com/' + this.name + '/', {
@@ -13,8 +13,8 @@ $(function () {
             for (i in datas) {
                 url = datas[i].node.display_url;
                 this.html = `
-                <div class="col-6 col-md-4 vh-35 p-2 cardImgWrp">
-                <img src="${url}" class="cardImg" style="box-shadow: 5px 5px 20px #00000052;">
+                <div class="col-6 col-lg-3 p-2 news-height cardImgWrp">
+                <img src="${url}" class="cardImg news-img" style="box-shadow: 5px 5px 20px #00000052;">
                 </div>
                 `;
                 $(".insta-card").append(this.html);
@@ -23,8 +23,35 @@ $(function () {
     } catch (error) {
         alert(error);
     }
-    
-    $(document).on('click',function(e) {
+});
+
+$(function(){
+	//メールフォームの出現
+  $("#mailform").on("click",function() {
+  $("form").slideToggle();
+	});
+							
+				});
+				
+$(function(){
+		
+var timer = false;
+  $(window).resize(function() {
+      if (timer !== false) {
+          clearTimeout(timer);
+      }
+      timer = setTimeout(function() {
+      location.reload();
+      }, 200);
+  });
+		
+  var winW = $(window).width();
+  var devW = 720;
+  
+  if (winW <= devW) {
+    //720px以下の時の処理  
+   //スマホ用navここから
+   $(document).on('click',function(e) {
    if(!$(e.target).closest('.navigation').length) {
      // ターゲット要素の外側をクリックした時の操作
      			$("nav").slideUp();
@@ -35,8 +62,25 @@ $(function () {
 			$(".nav-cover").slideToggle();
    }
 	});
+	//スマホ用navここまで
 	
-    $("#mailform").on("click",function() {
-    		$("form").slideToggle();
-	});
+  } else {
+    //720pxより大きい時の処理
+    $(document).on('click',function() {
+    	$("nav").slideToggle();
+							});
+							
+		var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('nav').slideUp();
+    } else {
+        $('nav').slideDown();
+    }
+    startPos = winScrollTop;
 });
+
+					  }
+		
+				});

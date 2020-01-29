@@ -465,6 +465,70 @@ form input{
 }
 /* indexページここまで */
 
+/* 商品詳細画面 */
+.shosai{
+	display: none;
+	width: 80%;
+	height: 60vh;
+	position: fixed;
+	z-index: 999;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background-color: #e8e8e8;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+.shosai-out{
+	/* 詳細画面外を任意の色で覆います */
+	display: none;
+	position: fixed;
+	top:0; left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 998;
+	/* 任意の色に変更 */
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.shosai .shosai-contents{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.shosai-logo{
+	/* 詳細画面にロゴとか入れたい人用
+	削除してOK */
+	position: absolute;
+	height: 15%;
+	bottom: 1%;
+	right: 1%;
+	opacity: 0.3;
+}
+.shosai .shosai-contents .item-img{
+	width: 100%;
+	height: 50%;
+}
+.scroll{
+	height: 50%;
+	overflow: scroll;
+}
+.assignment-text{
+	display: none;
+}
+.item-title{
+	font-size: 2rem;
+}
+.item-price{
+	color: #79036a;
+	margin-left: 0.3rem;
+}
+.item-text{
+	
+}
+/* 商品詳細画面ここまで */
+
 /* レスポンシブ対応 */
 @media (min-width: 720px){
 .name-relative{
@@ -547,4 +611,72 @@ nav ul li{
 	height: 50vh;
 	width: 90%;
 }
+
+
+/* 商品詳細画面 */
+.shosai{
+	display: none;
+	width: 40%;
+	height: 80vh;
+	position: fixed;
+	z-index: 999;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background-color: #e8e8e8;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+.shosai-out{
+	/* 詳細画面外を任意の色で覆います */
+	display: none;
+	position: fixed;
+	top:0; left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 998;
+	/* 任意の色に変更 */
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.shosai .shosai-contents{
+	position: relative;
+	width: 95%;
+	height: 100%;
+	margin: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.shosai-logo{
+	/* 詳細画面にロゴとか入れたい人用
+	削除してOK */
+	position: absolute;
+	height: 15%;
+	bottom: 1%;
+	right: 1%;
+	opacity: 0.3;
+}
+.shosai .shosai-contents .item-img{
+	width: 100%;
+	height: 55%;
+}
+.assignment-text{
+	display: none;
+}
+.scroll{
+	height: 45%;
+	overflow: scroll;
+}
+.item-title{
+	font-size: 2rem;
+}
+.item-price{
+	color: #79036a;
+	margin-left: 0.3rem;
+}
+.item-text{
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+/* 商品詳細画面ここまで */
+
+
 }

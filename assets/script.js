@@ -84,3 +84,23 @@ $(window).on('scroll',function(){
 					  }
 		
 				});
+		
+
+$(function(){
+		//assignment-sourceクラスが付与されている要素をクリックすると
+		//詳細画面が開き、画像やテキストが代入されます
+		$(".assignment-source").on("click", function(){ 
+         	$(".item-img").attr("src", $(this).find(".assignment-img").attr("src"));
+         	$(".item-title").text($(this).find(".assignment-title").text());
+         	$(".item-price").text($(this).find(".assignment-price").text());
+         	$(".item-text").text($(this).find(".assignment-text").text());
+     			$(".shosai").css("display","block");
+					$(".shosai-out").css("display","block");
+								});
+									
+				//詳細画面外をクリックしたときに詳細画面を閉じます
+		   $(".shosai-out").on("click",function() {
+				$(".shosai").css("display","none");
+				$(".shosai-out").css("display","none");
+							});
+});

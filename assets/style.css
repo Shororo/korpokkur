@@ -470,6 +470,9 @@ form input{
 .googleform iframe{
 	max-width: 100%;
 }
+.ninki .carousel-caption{
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,1));
+}
 /* indexページここまで */
 
 /* 商品詳細画面 */
@@ -686,5 +689,10 @@ nav ul li{
 }
 /* 商品詳細画面ここまで */
 
+#carouselExampleIndicators{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 }

@@ -461,7 +461,14 @@ form input{
 }
 .news-img {
 	height: 100%;
-	width: 100%;
+	max-width: 100%;
+}
+.googleform{
+	display: none;
+	text-align: center;
+}
+.googleform iframe{
+	max-width: 100%;
 }
 /* indexページここまで */
 
@@ -525,7 +532,7 @@ form input{
 	margin-left: 0.3rem;
 }
 .item-text{
-	
+	margin-left: 0.1rem;
 }
 /* 商品詳細画面ここまで */
 
@@ -673,6 +680,7 @@ nav ul li{
 	margin-left: 0.3rem;
 }
 .item-text{
+	margin-left: 0.1rem;
 	font-size: 1.3rem;
 	line-height: 1.5;
 }

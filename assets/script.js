@@ -28,7 +28,7 @@ $(function () {
 $(function(){
 	//メールフォームの出現
   $("#mailform").on("click",function() {
-  $("form").slideToggle();
+  $(".googleform").slideToggle();
 	});
 							
 				});

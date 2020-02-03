@@ -461,7 +461,7 @@ form input{
 }
 .news-img {
 	height: 100%;
-	max-width: 100%;
+	width: 100%;
 }
 .googleform{
 	display: none;

@@ -35,9 +35,16 @@ $(function(){
 				
 $(function(){
 		
+// ウインドウの横幅を保持
+//(safariではスクロールだけでリロードされてしまうため.
+//横幅が変化したときのみリロードさせる)
+var currentWidth = window.innerWidth;
 var timer = false;
   $(window).resize(function() {
-      if (timer !== false) {
+  		    if (currentWidth == window.innerWidth) {
+        // ウインドウ横幅が変わっていないため処理をキャンセル。
+        return;
+    }else if (timer !== false) {
           clearTimeout(timer);
       }
       timer = setTimeout(function() {

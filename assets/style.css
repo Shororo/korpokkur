@@ -536,6 +536,7 @@ form input{
 }
 .item-text{
 	margin-left: 0.1rem;
+	font-size: 1.3rem;
 }
 /* 商品詳細画面ここまで */
 
@@ -684,7 +685,7 @@ nav ul li{
 }
 .item-text{
 	margin-left: 0.1rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	line-height: 1.5;
 }
 /* 商品詳細画面ここまで */

@@ -1,7 +1,7 @@
     /* instagram */
 $(function () {	
     try {
-        this.name = "achon0807";
+        this.name = "example_web";
         $.ajax('https://www.instagram.com/' + this.name + '/', {
             timeout: 2000,
             datatype: 'html'

@@ -93,7 +93,7 @@ $(window).on('scroll',function(){
 				});
 		
 
-$(function(){
+$(window).on('load',function(){
 		//assignment-sourceクラスが付与されている要素をクリックすると
 		//詳細画面が開き、画像やテキストが代入されます
 		$(".assignment-source").on("click", function(){ 
@@ -110,4 +110,20 @@ $(function(){
 				$(".shosai").css("display","none");
 				$(".shosai-out").css("display","none");
 							});
+});
+
+//特定の位置までスクロールしたら背景画像を差し替える
+var thisOffset;
+$(window).on('load',function(){
+	thisOffset = $('#menu').offset().top + $('#menu').outerHeight();
+});
+ 
+$(window).scroll(function(){
+	if( $(window).scrollTop() + $(window).height() > thisOffset){
+		// 特定の要素を超えた
+		$("#goaisatsu").css("display","block");
+	} else {
+		// 特定の要素を超えていない
+		$("#goaisatsu").css("display","none");
+	}
 });

@@ -502,10 +502,17 @@ form input{
 	font-size: 2.3rem;
 	filter: drop-shadow(1px 1px 2px rgba(0,0,0,1));
 }
+.hitokoto{
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
 .tenmei{
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 1%;
 }
 /* indexページここまで */
 
